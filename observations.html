@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hegeman Washing Machines</title>
+    <!-- import javascript variables and functions -->
+    <script src="app.js" defer></script>
+    <!-- import CSS styles -->
+    <link rel="stylesheet" href="styles.css" /> 
+    <style>
+      .tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 290px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  background-color: lightgray;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+#start {
+        background-color: rgb(80, 202, 80);
+      }
+      #col1 {
+        background-color: lightgray;
+      }
+
+      #washer-settings2 {
+        border-collapse: collapse;
+        width: 100%;
+        font-weight:300;
+      }
+      #washer-settings2 td, #washer-settings2 th {
+        border: 1px solid #ddd;
+        padding: 5px;
+      }
+
+      #washer-settings2 th {
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+      #pressable:hover {background-color: rgb(199, 231, 180);}
+    </style>
+  </head>
+
+  <!-- page content goes into <body> -->
+  <body>
+    <div id="hwm-topbar">
+      <h1>Observations</h1>
+      <table>
+        <tr>
+          <th><a href="index.html">Home</a></th>
+          <th><a href="personaa.html">Persona B</a></th>
+          <th><a href="personab.html">Persona B</a></th>
+
+        </tr>
+      </table>
+
+      <div class="description">
+        <p>
+          Most residents, when using the machines, will:
+        </p>
+        <ol>
+          <li>Approach the machines and look for one with an open door.</li>
+          <ul>
+            <li>If there are no doors open, they will find one that says "Open Door" on the display
+              signaling that the washer cycle is done and the previous user has yet to remove their clothes.
+            </li>
+            <li>They will then either wait for the previous user to come and remove the laundry or they will
+              remove it themselves to use the machine.
+            </li>
+          </ul>
+          <li>Once finding (or making) an open machine, they will put their clothes in.</li>
+          <li>They will then put in detergent.</li>
+          <ul>
+            <li>If they use liquid or powder detergent, they will first open the soap tray. Some users free-hand the amount
+              of detergent they use, others carefully measure out the detergent. Either way, they fill up the tray a certain
+              amount, then close it to move on to the next step.
+            </li>
+            <li>
+              If they use tide-pods, users will toss in the tide pod(s) on their clothes before moving on to the next step.
+            </li>
+            <li>
+              In both instances, there are some users who use "too much soap".
+            </li>
+          </ul>
+          <li>Once putting in the detergent, users will close the door to the machine and begin choosing their 
+            
+            <div class="tooltip">settings
+              <span class="tooltiptext">
+                <table id="washer-settings2">
+                  <tr>
+                    <th id="col1">Wash</th>
+                    <th id="pressable">Regular</th>
+                    <th id="pressable">Deluxe</th>
+                    <th id="pressable">Ultra</th>
+                  </tr>
+                  <tr>
+                    <th id="col1">Cycle</th>
+                    <th id="pressable">Normal</th>
+                    <th id="empty"></th>
+                    <th id="pressable">Delicate</th>
+                  </tr>
+                  <tr>
+                    <th id="col1">Temp</th>
+                    <th id="pressable">Cold</th>
+                    <th id="pressable">Warm</th>
+                    <th id="pressable">Hot</th>
+                    <th id="start">Start</th>
+                  </tr>
+                </table>
+              </span>
+            </div>.</li>
+          <li>After choosing the washer preferences, the users will press start and get ready to leave.</li>
+          <ul>
+            <li>Some users will set a timer for the cycle length so they can time when they need to return to flip their laundry.</li>
+            <li>Some users will leave their laundry baskets in the laundry room, others take their baskets with them.</li>
+          </ul>
+        </ol>
+        <p>
+          List your questions in a numbered list and summarize the responses of your interviewed users using up 
+          to 5 bullet points. Be sure to highlight the main points or important patterns. Your summary should be 
+          both concise and informative.
+        </p>
+      </div>
+
+      <!-- TODO: PART I Add your own images and use CSS flex to make sure they work on different screen sizes -->
+      <div class="description">
+        <p>
+          <ol>
+            <li>How confident do you feel about using the new machines?</li>
+            <li>How effective do you think the new stickers are?</li>
+            <li>Did you encounter any challenges using the new machines?</li>
+            <li>Have you noticed any changes in the way you do laundry with the new machines?</li>
+            <li>Would you consider your experience with the new machines positive?</li>
+          </ol>
+        </p>    
+      </div>
+    </div>
+  </body>
+
+</html>

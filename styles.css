@@ -1,14 +1,24 @@
-#cs1300-gallery {
-  background-color: lightblue;
-}
+
 
 /* Uncomment below if images are way too big.
 Selects all image tags and makes them 500px;
  */
-/*img {*/
-/*  width: 500px;*/
-/*}*/
+img {
+  width: 500px;
+  margin: 20px;
+  border: 2px solid;
+}
 
-.gallery-container {
+.description{
+max-width: 1430px;
+}
+
+.container {
   /* TODO add styles (hint: use flex!) https://www.w3schools.com/cssref/ */
+  display: flex;
+  max-width: 1430px;
+}
+
+.washingmachine {
+  border: 12px solid;
 }

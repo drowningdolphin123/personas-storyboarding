@@ -1,22 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>WebDev Studio</title>
+    <title>Hegeman Washing Machines</title>
     <!-- import javascript variables and functions -->
     <script src="app.js" defer></script>
     <!-- import CSS styles -->
     <link rel="stylesheet" href="styles.css" /> 
+    <style>
+      #washer-settings {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      #washer-settings td, #washer-settings th {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+
+      #washer-settings th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+      }
+
+      #start {
+        background-color: rgb(80, 202, 80);
+      }
+      #col1 {
+        background-color: lightgray;
+      }
+
+      #washer-settings2 {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      #washer-settings2 td, #washer-settings2 th {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+
+      #washer-settings2 th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+      }
+      #pressable:hover {background-color: rgb(199, 231, 180);}
+
+    </style>
   </head>
 
   <!-- page content goes into <body> -->
   <body>
-    <div id="cs1300-gallery">
-      <h1>Welcome to my bakery</h1>
-      <p>Add your own images and styles!</p>
+    <div id="hwm-topbar">
+      <h1>Navigating the New Washing Machines in Hegeman Hall</h1>
+
+      <div class="description">
+        <h3>On September 22, 2022, Hegeman Hall recieved four new washers and four new dryers. The new machines
+          were meant to be better in every way to their predecesors with better functionality and more signage to
+          direct users how to operate them. After <a href="observations.html">observing</a> Hegeman residents, it seems
+         residents have had varying experiences with the new machines,
+          depicted in <a href="personaa.html">Persona A</a> and <a href="personab.html">Persona B</a>.
+        </h3>        
+      </div>
 
       <!-- TODO: PART I Add your own images and use CSS flex to make sure they work on different screen sizes -->
-      <div class="gallery-container">
-        <img class="gallery-item" src="./assets/jeff.jpg" alt="jeff watching u">
+      <div class="container">
+        <img id="washingmachine" src="https://i.imgur.com/NSnRNkm.jpg"></img>
+        <div class="element">
+          <p>
+            This description of the machine will begin at the top of the drawing and move left to right and down.
+          </p>
+          <p>The top left element is a screen that displays messages including "Close Door", "Start", "Open Door", 
+            and "Error" as well as the time left in the cycle. The following table describes what each display means.</p>
+          <table id="washer-settings">
+            <tr>
+              <th id="col1">Close Door</th>
+              <th>Displayed when the user has set wash settings
+                and the washing machine is ready to start but the door is not closed yet.</th>
+            </tr>
+            <tr>
+              <th id="col1">Start</th>
+              <th>Displayed when the wash settings are set and the door is closed.</th>
+            </tr>
+            <tr>
+              <th id="col1">Open Door</th>
+              <th>Displayed when the machine has completed its wash cycle.</th>
+            </tr>
+            <tr>
+              <th id="col1">Error</th>
+              <th>Displayed when the machine is malfunctioning or out of order.</th>
+            </tr>
+          </table>
+          <p>The element on the top right is a control panel for the actual settings and preferences the 
+            user can set for their clothes. The following table displays the layout and buttons on the 
+            machines.
+          </p>
+          <table id="washer-settings2">
+            <tr>
+              <th id="col1">Wash</th>
+              <th id="pressable">Regular</th>
+              <th id="pressable">Deluxe</th>
+              <th id="pressable">Ultra</th>
+            </tr>
+            <tr>
+              <th id="col1">Cycle</th>
+              <th id="pressable">Normal</th>
+              <th id="empty"></th>
+              <th id="pressable">Delicate</th>
+            </tr>
+            <tr>
+              <th id="col1">Temp</th>
+              <th id="pressable">Cold</th>
+              <th id="pressable">Warm</th>
+              <th id="pressable">Hot</th>
+              <th id="start">Start</th>
+            </tr>
+          </table>
+          <p>The "Do Not Fill Above Fill Line" sticker is a reminder to users on the top of the machine. There is a faint 
+            etched line on the door
+            of the machine (not pictured here) that shows where the machine can be filled to. Unfortunately, 
+            the line is
+            so faint that users frequently do not see it. Thus, the reminder often does not do much to dissuade users from
+            over-filling the machine.
+          </p>
+          <p>
+            The close door display is similar to the upper left element where it tells you to open or close the door
+            depending on where the machine is in the cycle.
+          </p>
+          <p>
+            The "Leave Open When Done" sticker is a reminder to users on the front of the machine. The goal is to prevent mold from
+            growing inside the machine by reminding users to keep the washer open once the cycle is finished to allow it to
+            dry out.
+          </p>
+          <p>
+            The soap tray has a prominent sticker on it titled "No Pods In Tray" which can be confusing to some users. The
+            tray takes in liquid and powder detergents, but cannot take in TidePods or similar "pod" products. Some users
+            interpreted this sticker as "no tide pods allowed in machine" which caused some panic.
+          </p>
+        </div>
+        
+        
+      </div>
+
+      <div class="container">
+        
       </div>
 
       <!-- TODO: PART II Uncomment the line below, and hook up this button to display data from an API -->
