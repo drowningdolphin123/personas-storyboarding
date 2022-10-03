@@ -22,3 +22,24 @@ max-width: 1430px;
 .washingmachine {
   border: 12px solid;
 }
+
+.and-menu {
+  display: flex;
+}
+
+a:link, a:visited {
+  background-color: rgb(54, 152, 255);
+  color: black;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: rgb(162, 211, 255);
+}
+
+.hwm-topbar {
+  display: flex;
+}

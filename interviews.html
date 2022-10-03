@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hegeman Washing Machines</title>
+    <!-- import javascript variables and functions -->
+    <script src="app.js" defer></script>
+    <!-- import CSS styles -->
+    <link rel="stylesheet" href="styles.css" /> 
+    <style>
+      .tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 290px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  background-color: lightgray;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+#start {
+        background-color: rgb(80, 202, 80);
+      }
+      #col1 {
+        background-color: lightgray;
+      }
+
+      #washer-settings2 {
+        border-collapse: collapse;
+        width: 100%;
+        font-weight:300;
+      }
+      #washer-settings2 td, #washer-settings2 th {
+        border: 1px solid #ddd;
+        padding: 5px;
+      }
+
+      #washer-settings2 th {
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+      #pressable:hover {background-color: rgb(199, 231, 180);}
+
+      .card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 60, 124, 0.2);
+  transition: 0.3s;
+  margin: 20px 10px 20px 10px;
+  max-width: 930px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,60,124,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+  display:block;
+  max-width: 930px;
+}
+    </style>
+  </head>
+
+  <!-- page content goes into <body> -->
+  <body>
+    <div id="hwm-topbar">
+      <h1>Experiences</h1>
+      <table>
+        <tr>
+          <th><a href="index.html">Home</a></th>
+          <th></th>
+          <th><a href="personaa.html">Persona A</a></th>
+          <th></th>
+          <th><a href="personab.html">Persona B</a></th>
+          <th></th>
+          <th><a href="observations.html">Observations</a></th>
+        </tr>
+      </table>
+</div>
+<!--Legend element and course graph element borrowed from the critical review website.-->
+      <div class="description">
+        <h3>How Hegeman Hall Reacts to the Machines:</h3>
+        <p>
+          <ol>
+            <li><b>How confident do you feel about using the new machines?</b></li>
+            <ul>
+              <li>Most residents interviewed felt confident in using the new machines since they were very similar to previous machines.</li>
+              <li>Some residents interviewed mentioned feeling comfortable in their knowledge of how to do laundry but questioned their confidence 
+                because they were nervous about breaking the new machines.
+              </li>
+              <li>The overall consensus is residents felt capabale of using the machines but were wary of accidentally breaking the new machines.</li>
+            </ul>
+            <p></p>
+            <li><b>How effective do you think the new stickers are?</b></li>
+            <ul>
+              <li>Some residents interviewed found the new stickers redundant. In particular, the fill line sticker frustrated some residents 
+                interviewed because they did not know where the fill line was on the machine.</li>
+              <li>Some residents interviewed were confused by the sticker "No Pods In Tray". They were not sure if this mean no pods at all in the 
+                machine, and if so, what type of detergent they were allowed to use.
+              </li>
+              <li>Most residents interviewd thought that, although the stickers were meant to be helpful, they either ignored them or were confused
+                by what the stickers were telling them to do. 
+              </li>
+            </ul>
+            <p></p>
+            <li><b>Did you encounter any challenges using the new machines?</b></li>
+            <ul>
+              <li>Some residents interviewed felt overwhelmed by the stickers which interfered with their understanding of the new machines.</li>
+              <li>Some residents interviewed realized that they didn't know what the fill line was and were consistently over-filling the
+                machines. This posed an issue because their clothes weren't coming out of the machine fully clean, which led them to believe
+                the new machines were broken.
+              </li>
+              <li>Most residents interviewed mentioned that they did not have too many issues with the user interface of the machines, but were 
+                frustrated by their user experience because the previous machines had an app indicating when cycles were done. The new machines
+                don't appear to have one set up yet, and some residents of Hegeman Hall have been disrespectful with other people's laundry.
+              </li>
+            </ul>
+            <p></p>
+            <li><b>Have you noticed any changes in the way you do laundry with the new machines?</b></li>
+            <ul>
+              <li>Most residents interviewed didn't notice any changes to their routine for laundry other than an initial quick glance at
+                the new stickers.
+              </li>
+              <li>Some residents interviewed mentioned they were more inclined now to set a timer when doing laundry due to other residents 
+                taking over machines who's cycle was done.
+              </li>
+              <li>Overall, residents found their approach to laundry to be the same or slightly changed, and any changes made were because 
+                the BrownU App is no longer connected to the washing and drying machines so residents now relied on GroupMe and timers
+                to know if and when machines were open or done.
+              </li>
+            </ul>
+            <p></p>
+            <li><b>Would you consider your experience with the new machines positive?</b></li>
+            <ul>
+              <li>Most residents interviewed agreed that their experience with the new machines was positive, and that they preferred
+                the new machines to the old machines.
+              </li>
+              <li>
+                Some residents interviewed expressed that they wished the fill line could be more explicit, especially since there was
+                a note about not filling the machine past the line.
+              </li>
+              <li>All residents interviewed expressed their happiness about the laundry in Hegeman Hall being free for now, but were 
+                concerned about what would happen when we would need to pay for laundry again.
+              </li>
+            </ul>
+          </ol>
+        </p>
+        <div id="legend">
+          <svg width="325" height="70">
+            <g class="legendLinear" transform="translate(20,20)">
+              <g class="legendCells"><g class="cell" transform="translate(0,0)">
+                <rect class="swatch" height="15" width="30" style="fill: rgb(0, 123, 255);"></rect>
+                <text class="label" transform="translate(15,33)" style="text-anchor: middle;">Agree</text>
+              </g>
+              <g class="cell" transform="translate(32,0)">
+                <rect class="swatch" height="15" width="30" style="fill: rgb(54, 152, 255);"></rect>
+              <text class="label" transform="translate(15,33)" style="text-anchor: middle;"></text>
+            </g>
+            <g class="cell" transform="translate(64,0)">
+              <rect class="swatch" height="15" width="30" style="fill: rgb(108, 182, 255);"></rect>
+              <text class="label" transform="translate(15,33)" style="text-anchor: middle;"></text>
+            </g>
+            <g class="cell" transform="translate(96,0)">
+              <rect class="swatch" height="15" width="30" style="fill: rgb(162, 211, 255);"></rect>
+              <text class="label" transform="translate(15,33)" style="text-anchor: middle;"></text>
+            </g>
+            <g class="cell" transform="translate(128,0)">
+              <rect class="swatch" height="15" width="30" style="fill: rgb(216, 240, 255);"></rect>
+              <text class="label" transform="translate(15,33)" style="text-anchor: middle;">Disagree</text>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </div>
+        <div id="course_graph"> 
+          <svg class="chart" width="100%" viewBox="0 0 1300 200">
+            <g>
+              <rect class="bar ratingNo-1" fill="rgb(216, 240, 255)" x="400" y="10" transform="translate(200,0)" style="width: 0px; height: 16px;">machine-confidence</rect>
+              <rect class="bar ratingNo-1" fill="rgb(216, 240, 255)" x="320" y="37.5" transform="translate(200,0)" style="width: 80px; height: 16px;">stickers</rect>
+              <rect class="bar ratingNo-1" fill="rgb(216, 240, 255)" x="80" y="65" transform="translate(200,0)" style="width: 320px; height: 16px;">difficult</rect>
+              <rect class="bar ratingNo-1" fill="rgb(216, 240, 255)" x="160" y="92.5" transform="translate(200,0)" style="width: 240px; height: 16px;">routine</rect>
+              <rect class="bar ratingNo-1" fill="rgb(216, 240, 255)" x="400" y="120" transform="translate(200,0)" style="width: 0px; height: 16px;">loved</rect>
+              
+            </g>
+            <g>
+              <rect class="bar ratingNo-2" fill="rgb(162, 211, 255)" x="400" y="10" transform="translate(200,0)" style="width: 0px; height: 16px;">machine-confidence</rect>
+              <rect class="bar ratingNo-2" fill="rgb(162, 211, 255)" x="240" y="37.5" transform="translate(200,0)" style="width: 80px; height: 16px;">stickers</rect>
+              <rect class="bar ratingNo-2" fill="rgb(162, 211, 255)" x="0" y="65" transform="translate(200,0)" style="width: 0px; height: 16px;">difficult</rect>
+              <rect class="bar ratingNo-2" fill="rgb(162, 211, 255)" x="0" y="92.5" transform="translate(200,0)" style="width: 160px; height: 16px;">routine</rect>
+              <rect class="bar ratingNo-2" fill="rgb(162, 211, 255)" x="400" y="120" transform="translate(200,0)" style="width: 0px; height: 16px;">loved</rect>
+              
+            </g>
+            <g>
+              <rect class="bar ratingNo-3" fill="rgb(108, 182, 255)" x="400" y="10" transform="translate(200,0)" style="width: 0px; height: 16px;">machine-confidence</rect>
+              <rect class="bar ratingNo-3" fill="rgb(108, 182, 255)" x="0" y="37.5" transform="translate(200,0)" style="width: 240px; height: 16px;">stickers</rect>
+              <rect class="bar ratingNo-3" fill="rgb(108, 182, 255)" x="0" y="65" transform="translate(200,0)" style="width: 0px; height: 16px;">difficult</rect>
+              <rect class="bar ratingNo-3" fill="rgb(108, 182, 255)" x="0" y="92.5" transform="translate(200,0)" style="width: 0px; height: 16px;">routine</rect>
+              <rect class="bar ratingNo-3" fill="rgb(108, 182, 255)" x="320" y="120" transform="translate(200,0)" style="width: 80px; height: 16px;">loved</rect>
+              
+            </g>
+            <g>
+              <rect class="bar ratingNo-4" fill="rgb(54, 152, 255)" x="173" y="10" transform="translate(200,0)" style="width: 227px; height: 16px;">machine-confidence</rect>
+              <rect class="bar ratingNo-4" fill="rgb(54, 152, 255)" x="0" y="37.5" transform="translate(200,0)" style="width: 0px; height: 16px;">stickers</rect>
+              <rect class="bar ratingNo-4" fill="rgb(54, 152, 255)" x="0" y="65" transform="translate(200,0)" style="width: 0px; height: 16px;">difficult</rect>
+              <rect class="bar ratingNo-4" fill="rgb(54, 152, 255)" x="0" y="92.5" transform="translate(200,0)" style="width: 0px; height: 16px;">routine</rect>
+              <rect class="bar ratingNo-4" fill="rgb(54, 152, 255)" x="240" y="120" transform="translate(200,0)" style="width: 80px; height: 16px;">loved</rect>
+              
+            </g>
+            <g>
+              <rect class="bar ratingNo-5" fill="rgb(0, 123, 255)" x="0" y="10" transform="translate(200,0)" style="width: 320px; height: 16px;">machine-confidence</rect>
+              <rect class="bar ratingNo-5" fill="rgb(0, 123, 255)" x="0" y="37.5" transform="translate(200,0)" style="width: 0px; height: 16px;">stickers</rect>
+              <rect class="bar ratingNo-5" fill="rgb(0, 123, 255)" x="0" y="65" transform="translate(200,0)" style="width: 80px; height: 16px;">difficult</rect>
+              <rect class="bar ratingNo-5" fill="rgb(0, 123, 255)" x="0" y="92.5" transform="translate(200,0)" style="width: 0px; height: 16px;">routine</rect>
+              <rect class="bar ratingNo-5" fill="rgb(0, 123, 255)" x="0" y="120" transform="translate(200,0)" style="width: 240px; height: 16px;">loved</rect>
+              
+            </g>
+            <g>
+              <text x="185" y="21" text-anchor="end">Confident With Machines</text>
+              <text x="185" y="48.5" text-anchor="end">Stickers are Effective</text>
+              <text x="185" y="76" text-anchor="end">Encountered Challenges</text>
+              <text x="185" y="103.5" text-anchor="end">Routine Changed</text>
+              <text x="185" y="131" text-anchor="end">Positive Experience</text>
+            </g>
+          </svg>
+        </div>   
+      </div>
+    </div>
+  </body>
+
+</html>
