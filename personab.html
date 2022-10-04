@@ -12,7 +12,7 @@
   box-shadow: 0 4px 8px 0 rgba(0, 60, 124, 0.2);
   transition: 0.3s;
   margin: 20px 20px 20px 20px;
-  max-width: 1055px;
+  max-width: 1255px;
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -24,18 +24,9 @@
 .container {
   padding: 2px 16px;
   display:block;
-  max-width: 1055px;
+  max-width: 1255px;
 }
 
-.zoom {
-  transition: transform .2s; /* Animation */
-  width: 550px;
-  height: 700px;
-}
-
-.zoom:hover {
-  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
     </style>
   </head>
 
@@ -69,15 +60,12 @@
         </div>        
       </div>
 
-      <div style="display:block;  max-width: 1430px; margin-left: auto; margin-right: auto; width: 50%;">
-      <div class="zoom">
-        <img id="persona" src="https://i.imgur.com/Pg7NbOe.jpg"></img>
+      
+      <div class="image" style="display: flexbox;">
+        <img id="persona" style="width: 600px;" src="https://i.imgur.com/Pg7NbOe.jpg"></img>
+        <img style="width: 600px;" src="https://i.imgur.com/eKiqrGX.jpg"></img>
       </div>
 
-      <div class="zoom">
-        <img src="https://i.imgur.com/eKiqrGX.jpg"></img>
-      </div>
-    </div>
   </body>
 
 </html>
