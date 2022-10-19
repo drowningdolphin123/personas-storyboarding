@@ -10,13 +10,13 @@ img {
 }
 
 .description{
-max-width: 1430px;
+max-width: 1300px;
 }
 
 .container {
   /* TODO add styles (hint: use flex!) https://www.w3schools.com/cssref/ */
   display: flex;
-  max-width: 1430px;
+  max-width: 1300px;
 }
 
 .washingmachine {
@@ -28,16 +28,16 @@ max-width: 1430px;
 }
 
 a:link, a:visited {
-  background-color: rgb(54, 152, 255);
+  background-color: white;
   color: black;
-  padding: 5px 10px;
   text-align: center;
-  text-decoration: none;
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
   display: inline-block;
 }
 
 a:hover, a:active {
-  background-color: rgb(162, 211, 255);
+  background-color: white;
 }
 
 .hwm-topbar {
